@@ -32,6 +32,16 @@ def add_question(request):
 
 def start_game(request):
     context_dict = {}
+    questions = Question.objects.all()
+    questions1 = Question.objects.filter(value=1)
+    questions2 = Question.objects.filter(value=2)
+    questions3 = Question.objects.filter(value=3)
+    questions4 = Question.objects.filter(value=4)
+
+    context_dict['questions1'] = questions1
+    context_dict['questions2'] = questions2
+    context_dict['questions3'] = questions3
+    context_dict['questions4'] = questions4
 
     if request.method == 'POST':
 
@@ -44,9 +54,17 @@ def start_game(request):
             context_dict['player2'] = player2
         
         context_dict['form'] = PlayerForm(request.POST)
-        return render(request, 'index.html', context_dict)
+        return render(request, 'start_game.html', context_dict)
 
-    context_dict['form'] = PlayerForm()
+    else:
+        context_dict['form'] = PlayerForm()
+
+    
     return render(request, 'start_game.html', context_dict)
+
+def question_detail(request, question_id):
+    question = Question.objects.get(id=question_id)
+    return render(request, 'question_detail.html', {'question' : question})
+
 
 
