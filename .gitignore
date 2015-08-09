@@ -57,4 +57,5 @@ docs/_build/
 target/
 
 db.sqlite3
+questions/migrations
 
