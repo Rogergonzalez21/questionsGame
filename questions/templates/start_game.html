@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Index</title>
+	<title>Juego</title>
 </head>
 <body>
 <h1>Hola mundo!</h1>
@@ -18,5 +18,29 @@
         {{ player1 }}
         {{ player2 }}
 
+        <table>
+          <tr>
+          {% for question in questions1 %}
+            <td><a href="{% url 'question_detail' question.id %}">{{ question.value }}</a></td>
+            {% endfor %}
+          </tr>
+          <tr>
+          {% for question in questions2 %}
+            <td><a href="{% url 'question_detail' question.id %}">{{ question.value }}</a></td>
+            {% endfor %}
+          </tr>
+          <tr>
+          {% for question in questions3 %}
+          <td><a href="{% url 'question_detail' question.id %}">{{ question.value }}</a></td>
+          {% endfor %}
+          </tr>
+          <tr>
+          {% for question in questions4 %}
+          <td><a href="{% url 'question_detail' question.id %}">{{ question.value }}</a></td>
+          {% endfor %}
+          </tr>
+          </table>
+        <a href="{% url 'index' %}">Volver</a>
 </body>
 </html>
+<!--
