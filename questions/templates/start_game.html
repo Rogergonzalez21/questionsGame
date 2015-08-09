@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+</head>
+<body>
+<h1>Hola mundo!</h1>
+<form class="form-inline" id="search" method="post" action=".">
+          {% csrf_token %}
+          {% for field in form %}
+            <div class="form-group">
+              <label>{{ field.help_text }}</label>
+              {{field}}
+            </div>
+          {% endfor %}
+          <button type="submit" class="btn btn-primary">Buscar</button>
+        </form>
+        {{ player1 }}
+        {{ player2 }}
+
+</body>
+</html>
