@@ -6,5 +6,8 @@
 <body>
 <h1>lel</h1>
 {{ question.question }}
+
+<a href="{% url 'right_question' question.id %}">Correcto</a>
+<a href="{% url 'wrong_question' question.id %}">Incorrecto</a>
 </body>
 </html>

@@ -47,15 +47,27 @@ def edit_question(request, question_id):
 
 def delete_question(request, question_id):
 
-    question_to_delete = Question.objects.get(id=question_id)
-
     if request.method == 'POST':
-        question_to_delete.delete()
+        delete(request, question_id)
         return questions(request)
 
-    return render(request, 'delete_question.html', {'question' : question_to_delete})
+    return render(request, 'delete_question.html', {'question' : Question.objects.get(id=question_id)})
 
+def right_question(request, question_id):
 
+    if request.method == 'POST':
+        delete(request, question_id)
+        return start_game(request)
+
+    return render(request, 'right.html')
+
+def wrong_question(request, question_id):
+
+    if request.method == 'POST':
+        delete(request, question_id)
+        return start_game(request)
+
+    return render(request, 'wrong.html')
 
 
 def start_game(request):
@@ -77,5 +89,10 @@ def question_detail(request, question_id):
     question = Question.objects.get(id=question_id)
     return render(request, 'question_detail.html', {'question' : question})
 
+
+def delete(request, question_id):
+
+    question_to_delete = Question.objects.get(id=question_id)
+    question_to_delete.delete()
 
 
