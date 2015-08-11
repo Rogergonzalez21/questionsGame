@@ -17,6 +17,7 @@
             <tr>
               <td>{{ forloop.counter }}</td>
               <td>{{ question.question }}</td>
+              <td><a href="{% url 'edit_question' question.id %}">Editar pregunta</a></td>
             </tr>
         {% endfor %}
       </tbody>
