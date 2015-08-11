@@ -4,7 +4,6 @@ from django.db import models
 
 class Values(models.Model):
 	value = models.CharField(max_length=64)
-	points = models.IntegerField(default=0)
 
 	def __unicode__(self):
 		return self.value

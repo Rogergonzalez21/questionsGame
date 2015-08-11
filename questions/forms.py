@@ -10,9 +10,3 @@ class QuestionForm(forms.ModelForm):
 	class Meta:
 		model = models.Question
 		fields = ('question','value',)
-
-class PlayerForm(forms.Form):
-	player1 = forms.CharField(help_text="Jugador 1: ", widget=forms.TextInput(attrs={'class':'form-control'}))
-	points1 = forms.CharField(help_text="Puntos : ", widget=forms.TextInput(attrs={'class':'form-control'}))
-	player2 = forms.CharField(help_text="Jugador 2: ", widget=forms.TextInput(attrs={'class':'form-control'}))
-	points2 = forms.CharField(help_text="Puntos : ", widget=forms.TextInput(attrs={'class':'form-control'}))
