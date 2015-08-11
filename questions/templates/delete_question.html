@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Borrar</title>
+</head>
+<body>
+	<form id="delete_form" method="post" action=".">
+		{% csrf_token %}
+		¿Quieres eliminar {{ question.question }}?
+		<br/>
+		<br/>
+      	<input class="btn btn-danger" type="submit" name="submit" value="Borrar">
+    </form> 
+</body>
+</html>

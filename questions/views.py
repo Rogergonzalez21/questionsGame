@@ -45,6 +45,19 @@ def edit_question(request, question_id):
 
     return render(request, 'add_question.html', {'form' : form})
 
+def delete_question(request, question_id):
+
+    question_to_delete = Question.objects.get(id=question_id)
+
+    if request.method == 'POST':
+        question_to_delete.delete()
+        return questions(request)
+
+    return render(request, 'delete_question.html', {'question' : question_to_delete})
+
+
+
+
 def start_game(request):
     context_dict = {}
     questions = Question.objects.all()
