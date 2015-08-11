@@ -7,5 +7,11 @@
 <h1>Hola mundo!</h1>
 <a href="{% url 'questions' %}">Preguntas</a>
 <a href="{% url 'start_game' %}">Empezar juego</a>
+
+{% if user.is_authenticated %}
+    <li><a href="{% url 'auth_logout' %}?next=/">Logout</a></li>
+{% else %}
+    <li><a href="{% url 'auth_login' %}">Login</a></li>
+{% endif %}
 </body>
 </html>
