@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dificulty</title>
+</head>
+<body>
+<h1>Dificultad</h1>
+<ul>
+
+	{% for d in dificulty %}
+
+		<li><a href="{% url 'game' d.id %}">{{ d.dificulty }}</a></li>
+	
+	{% endfor %}
+</ul>
+</body>
+</html>

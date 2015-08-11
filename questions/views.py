@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from forms import QuestionForm
-from models import Question
+from models import Question, Dificulty
 # Create your views here.
 
 def index(request):
@@ -53,24 +53,29 @@ def delete_question(request, question_id):
 
     return render(request, 'delete_question.html', {'question' : Question.objects.get(id=question_id)})
 
-def right_question(request, question_id):
+def right_question(request, dificulty_id, question_id):
 
     if request.method == 'POST':
         delete(request, question_id)
-        return start_game(request)
+        return game(request, dificulty_id)
 
     return render(request, 'right.html')
 
-def wrong_question(request, question_id):
+def wrong_question(request, dificulty_id, question_id):
 
     if request.method == 'POST':
         delete(request, question_id)
-        return start_game(request)
+        return game(request, dificulty_id)
 
     return render(request, 'wrong.html')
 
-
 def start_game(request):
+
+    dificulty = Dificulty.objects.all()
+    return render(request, 'dificulty.html', {'dificulty' : dificulty})
+
+
+def game(request, dificulty_id):
     context_dict = {}
     questions = Question.objects.all()
     questions1 = Question.objects.filter(value=1)
@@ -83,10 +88,10 @@ def start_game(request):
     context_dict['questions3'] = questions3
     context_dict['questions4'] = questions4
     
-    return render(request, 'start_game.html', context_dict)
+    return render(request, 'game.html', context_dict)
 
-def question_detail(request, question_id):
-    question = Question.objects.get(id=question_id)
+def question_detail(request, dificulty_id, question_id):
+    question = Question.objects.get(id=question_id, dificulty=dificulty_id)
     return render(request, 'question_detail.html', {'question' : question})
 
 
