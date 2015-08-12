@@ -78,10 +78,10 @@ def start_game(request):
 def game(request, dificulty_id):
     context_dict = {}
     questions = Question.objects.all()
-    questions1 = Question.objects.filter(value=1)
-    questions2 = Question.objects.filter(value=2)
-    questions3 = Question.objects.filter(value=3)
-    questions4 = Question.objects.filter(value=4)
+    questions1 = Question.objects.filter(value=1, dificulty=dificulty_id)
+    questions2 = Question.objects.filter(value=2, dificulty=dificulty_id)
+    questions3 = Question.objects.filter(value=3, dificulty=dificulty_id)
+    questions4 = Question.objects.filter(value=4, dificulty=dificulty_id)
 
     context_dict['questions1'] = questions1
     context_dict['questions2'] = questions2
