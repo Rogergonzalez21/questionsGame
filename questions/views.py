@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
-from forms import QuestionForm
+from forms import QuestionForm, QuestionFormSet
 from models import Question, Dificulty
 # Create your views here.
 
@@ -17,17 +17,17 @@ def questions(request):
 def add_question(request):
 
     if request.method == 'POST':
-        form = QuestionForm(request.POST)
+        formset = QuestionFormSet(request.POST, request.FILES)
 
-        if form.is_valid():
-            form.save(commit=True)
+        if formset.is_valid():
+            formset.save(commit=True)
             return questions(request)
         else: 
-            print form.errors
+            print formset.errors
     else:
-        form = QuestionForm()
+        formset = QuestionFormSet()
 
-    return render(request, 'add_question.html', {'form' : form})
+    return render(request, 'add_question.html', {'formset' : formset})
 
 @login_required
 def edit_question(request, question_id):
