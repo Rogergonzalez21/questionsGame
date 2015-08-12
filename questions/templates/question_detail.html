@@ -1,13 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Pregunta</title>
-</head>
-<body>
-<h1>lel</h1>
-{{ question.question }}
+{% extends 'base.html' %}
 
-<a href="{% url 'right_question' question.dificulty.id question.id %}">Correcto</a>
-<a href="{% url 'wrong_question' question.dificulty.id question.id %}">Incorrecto</a>
-</body>
-</html>
+{% load staticfiles %}
+
+{% block title %}Preguntas{% endblock %}
+
+
+{% block body_block %}
+<div class="down">
+	<div style="display:flex;justify-content:center;align-items:center;">
+	    <div>
+			<label style="font-size: 65px; text-align:center;">{{ question.question }}</label>
+			<br/>
+			<div style="display:flex;justify-content:center;align-items:center;">
+	    		<div>
+					<a class="btn btn-lg btn-success" href="{% url 'right_question' question.dificulty.id question.id %}">Correcto</a>
+					<a style="margin-left:15px" class="btn btn-lg btn-danger" href="{% url 'wrong_question' question.dificulty.id question.id %}">Incorrecto</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

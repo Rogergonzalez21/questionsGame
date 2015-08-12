@@ -1,13 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Incorrecto</title>
-</head>
-<body>
-<h1>Incorrecto!</h1>
-<form id="incorrect_question" method="post" action=".">
-	{% csrf_token %}
-	<button type="submit" class="btn btn-primary">Volver</button>
-</form>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}Preguntas{% endblock %}
+
+
+{% block body_block %}
+<div class="down" style="display:flex;justify-content:center;align-items:center;">
+    <div>
+		<h1 style="font-size:200px">¡Incorrecto!</h1>
+		<form id="incorrect_question" method="post" action=".">
+			{% csrf_token %}
+			<div style="display:flex;justify-content:center;align-items:center;">
+		        <div>
+					<button type="submit" class="btn btn-lg btn-primary" style="margin-top: 50px">Volver</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+{% endblock %}

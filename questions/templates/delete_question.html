@@ -1,15 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Borrar</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}Dificultad{% endblock %}
+
+
+{% block body_block %}
+<div class="down" style="display:flex;justify-content:center;align-items:center;">
 	<form id="delete_form" method="post" action=".">
 		{% csrf_token %}
-		¿Quieres eliminar {{ question.question }}?
+		<label style="font-size:50px">¿Quieres eliminar {{ question.question }}?</label>
 		<br/>
 		<br/>
-      	<input class="btn btn-danger" type="submit" name="submit" value="Borrar">
-    </form> 
-</body>
-</html>
+		<div style="display:flex;justify-content:center;align-items:center;">
+	  		<input class="btn btn-lg btn-danger" type="submit" name="submit" value="Borrar">
+	  		<a style="margin-left:15px" class="btn btn-lg btn-primary" href="{% url 'questions' %}">Volver</a>
+	  	</div>
+	</form> 
+</div>
+{% endblock %}
+
+<div >
+    <div>

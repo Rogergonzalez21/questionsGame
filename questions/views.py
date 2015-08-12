@@ -43,7 +43,7 @@ def edit_question(request, question_id):
     else:
         form = QuestionForm(instance=question_to_edit)
 
-    return render(request, 'add_question.html', {'form' : form})
+    return render(request, 'edit_questions.html', {'form' : form})
 
 def delete_question(request, question_id):
 

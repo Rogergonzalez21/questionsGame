@@ -1,9 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Preguntas</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}Preguntas{% endblock %}
+
+
+{% block body_block %}
+
 <h1>Preguntas</h1>
 <table class="table table-hover">
       <thead>
@@ -28,7 +31,11 @@
         {% endfor %}
       </tbody>
       </table>
-      <a href="{% url 'add_question' %}">Agregar pregunta</a>
-      <a href="{% url 'index' %}">Volver</a>
-</body>
-</html>
+      <div style="display:flex;justify-content:center;align-items:center;">
+        <div>
+      <a class="btn btn-lg btn-primary" href="{% url 'add_question' %}">Agregar pregunta</a>
+      <a class="btn btn-lg btn-primary" href="{% url 'index' %}">Volver</a>
+      </div>
+      </div>
+
+{% endblock %}

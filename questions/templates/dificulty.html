@@ -1,17 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Dificulty</title>
-</head>
-<body>
-<h1>Dificultad</h1>
-<ul>
+{% extends 'base.html' %}
 
-	{% for d in dificulty %}
+{% load staticfiles %}
 
-		<li><a href="{% url 'game' d.id %}">{{ d.dificulty }}</a></li>
-	
-	{% endfor %}
-</ul>
-</body>
-</html>
+{% block title %}Dificultad{% endblock %}
+
+
+{% block body_block %}
+<div class="down" style="display:flex;justify-content:center;align-items:center;">
+    <div>
+		<h1 style="text-align:center;">Dificultad</h1>
+		<a class="btn btn-lg btn-primary" href="{% url 'game' 1 %}">Fácil</a>
+		<a class="btn btn-lg btn-warning" href="{% url 'game' 2 %}">Medio</a>
+		<a class="btn btn-lg btn-danger" href="{% url 'game' 3 %}">Difícil</a>
+		</div>
+</div>	
+	<div style="display:flex;justify-content:center;align-items:center;">
+		<a class="btn btn-lg btn-primary" href="{% url 'index' %}">Volver</a>
+	</div>
+{% endblock %}

@@ -13,4 +13,9 @@ class QuestionForm(forms.ModelForm):
 		model = Question
 		fields = ('question','value',)
 
-QuestionFormSet = modelformset_factory(Question, fields=('question', 'dificulty', 'value'), extra=1)
+question_label = {'question' : "Pregunta", 'dificulty' : "Dificultad", 'value' : "Valor"}
+
+QuestionFormSet = modelformset_factory(Question, fields=('question', 'dificulty', 'value'), extra=1, 
+	widgets={'question': forms.TextInput(attrs={'class':'form-control'}), 
+	'dificulty' : forms.Select(attrs={'class':'form-control'}), 
+	'value' : forms.Select(attrs={'class':'form-control'})}, labels=question_label)

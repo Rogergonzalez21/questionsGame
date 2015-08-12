@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}Dificultad{% endblock %}
+
+
+{% block body_block %}
+<div class="down">
+    <h1>Editar pregunta</h1>
+    <form id="add_question" method="post" action="">
+        {% csrf_token %}
+        {% for field in form %}
+            {% for hidden in field.hidden_fields %} {{ hidden }} {% endfor %}
+            <div style="padding-bottom:6px; border-bottom:1px dotted #ccc; margin-bottom:6px;">
+                {{ field.label }}
+                {{ field }}
+                {{ field.errors }}
+            </div>
+        {% endfor %}
+        {{ formset.management_form }}
+        <div style="display:flex;justify-content:center;align-items:center;">
+            <input class="btn btn-lg btn-primary" type="submit" value="Guardar" />
+            <a class="btn btn-lg btn-primary" style="margin-left:15px;" href="{% url 'questions' %}">Volver</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

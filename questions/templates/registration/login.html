@@ -1,18 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Login</title>
-</head>
-<body>
-<h1>Login</h1>
-        <form method="post" action=".">
-                {% csrf_token %}
-                {{ form.as_p }}
+{% extends 'base.html' %}
 
-                <input type="submit" value="Log in" />
-                <input type="hidden" name="next" value="{{ next }}" />
-                </form>
+{% load staticfiles %}
 
-        <p>Not  a member? <a href="{% url 'registration_register' %}">Register</a>!</p>
-</body>
-</html>
+{% block title %}Login{% endblock %}
+
+
+{% block body_block %}
+<div class="down" style="display:flex;justify-content:center;align-items:center;">
+	<div>
+		<h1>Entrar</h1>
+		<form method="post" action=".">
+			{% csrf_token %}
+			{{ form.as_p }}
+
+			<input class="btn btn-lg btn-primary" type="submit" value="Log in" />
+			<input type="hidden" name="next" value="{{ next }}" />
+		</form>
+		<br/>
+		<p>¿No puedes entrar? ¡<a href="{% url 'registration_register' %}">Registrate</a>!</p>
+	</div>
+</div>
+{% endblock %}

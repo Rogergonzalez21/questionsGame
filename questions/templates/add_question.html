@@ -1,34 +1,42 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
+
 {% load staticfiles %}
-<html>
-<head>
-	<title>Añadir preguntas</title>
-</head>
-<body>
-<form id="add_question" method="post" action="">
-            {% csrf_token %}
-            {% for form in formset.forms %}
-            {% for hidden in form.hidden_fields %} {{ hidden }} {% endfor %}
-            <div style="padding-bottom:6px; border-bottom:1px dotted #ccc; margin-bottom:6px;">
-                {{ form.question.label_tag }}
-                {{ form.question }}
-                {{ form.dificulty.label_tag }}
-                {{ form.dificulty }}
-                {{ form.value.label_tag }}
-                {{ form.value }}
-            </div>
-            {% endfor %}
-            <p>
-                {{ formset.management_form }}
-                <input type="submit" value="Submit" />
-            </p>
-        </form>
+
+{% block title %}Preguntas{% endblock %}
+
+
+{% block body_block %}
+<div class="down">
+<h1>Añadir preguntas</h1>
+<form class="form-horizontal" id="add_question" method="post" action="">
+    {% csrf_token %}
+    <table id="add_question" class="table" width="100%">
+                <tbody>
+                    {% for form in formset.forms %}
+                    <tr id="{{ form.prefix }}-row">
+                            {% for fld in form.hidden_fields %}{{ fld }}{% endfor %}
+                            {% if form.instance.pk %}{{ form.DELETE }}{% endif %}
+                            {% for field in form.visible_fields %}
+                              <td>{{ field.label }}</td>
+                              <td>{{ field }}{{ field.errors }}</td>
+                            {% endfor %}
+                        <td></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <div style="display:flex;justify-content:center;align-items:center;">
+                <div>
+      <input class="btn btn-lg btn-primary" type="submit" value="Guardar" />
+      <a style="margin-left:15px;" class="btn btn-lg btn-primary" href="{% url 'questions' %}">Volver</a>
+      </div></div>
+</form>
+</div>
 <script src="{% static 'src/jquery-2.1.4.min.js' %}"></script>
 <script src="{% static 'src/jquery.formset.js' %}"></script>
 <script type="text/javascript">
-    $(function() {
-        $('#add_question div').formset();
-    })
-</script>
-</body>
-</html>
+           $(function() {
+               $('#add_question tbody tr').formset();
+           })
+       </script>
+{% endblock %}
