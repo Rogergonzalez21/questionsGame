@@ -10,6 +10,9 @@
         <tr>
           <th>#</th>
           <th>Pregunta</th>
+          <th>Dificultad</th>
+          <th>Valor</th>
+          <th colspan="2">Acciones</th>
         </tr>
       </thead>
       <tbody>
@@ -17,6 +20,8 @@
             <tr>
               <td>{{ forloop.counter }}</td>
               <td>{{ question.question }}</td>
+              <td>{{ question.dificulty }}</td>
+              <td>{{ question.value }}</td>
               <td><a href="{% url 'edit_question' question.id %}">Editar pregunta</a></td>
               <td><a href="{% url 'delete_question' question.id %}">Borrar pregunta</a></td>
             </tr>
