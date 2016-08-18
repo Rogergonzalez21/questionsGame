@@ -82,11 +82,13 @@ def game(request, dificulty_id):
     questions2 = Question.objects.filter(value=2, dificulty=dificulty_id)
     questions3 = Question.objects.filter(value=3, dificulty=dificulty_id)
     questions4 = Question.objects.filter(value=4, dificulty=dificulty_id)
-
+    questions5 = Question.objects.filter(value=5, dificulty=dificulty_id)
+    
     context_dict['questions1'] = questions1
     context_dict['questions2'] = questions2
     context_dict['questions3'] = questions3
     context_dict['questions4'] = questions4
+    context_dict['questions5'] = questions5
     
     return render(request, 'game.html', context_dict)
 
