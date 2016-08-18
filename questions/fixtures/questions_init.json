@@ -1,0 +1,51 @@
+[
+{
+    "fields": {
+        "value": "Chupeta"
+    },
+    "model": "questions.values",
+    "pk": 1
+},
+{
+    "fields": {
+        "value": "Algodon de azucar"
+    },
+    "model": "questions.values",
+    "pk": 2
+},
+{
+    "fields": {
+        "value": "Carrusel"
+    },
+    "model": "questions.values",
+    "pk": 3
+},
+{
+    "fields": {
+        "value": "Rueda de la fortuna"
+    },
+    "model": "questions.values",
+    "pk": 4
+},
+{
+    "fields": {
+        "dificulty": "Facil"
+    },
+    "model": "questions.dificulty",
+    "pk": 1
+},
+{
+    "fields": {
+        "dificulty": "Medio"
+    },
+    "model": "questions.dificulty",
+    "pk": 2
+},
+{
+    "fields": {
+        "dificulty": "Dificil"
+    },
+    "model": "questions.dificulty",
+    "pk": 3
+}
+]

@@ -1,0 +1,114 @@
+[
+{
+    "fields": {
+        "value": "Chupeta"
+    },
+    "model": "questions.values",
+    "pk": 1
+},
+{
+    "fields": {
+        "value": "Algodon de azucar"
+    },
+    "model": "questions.values",
+    "pk": 2
+},
+{
+    "fields": {
+        "value": "Carrusel"
+    },
+    "model": "questions.values",
+    "pk": 3
+},
+{
+    "fields": {
+        "value": "Rueda de la fortuna"
+    },
+    "model": "questions.values",
+    "pk": 4
+},
+{
+    "fields": {
+        "dificulty": "Facil"
+    },
+    "model": "questions.dificulty",
+    "pk": 1
+},
+{
+    "fields": {
+        "dificulty": "Medio"
+    },
+    "model": "questions.dificulty",
+    "pk": 2
+},
+{
+    "fields": {
+        "dificulty": "Dificil"
+    },
+    "model": "questions.dificulty",
+    "pk": 3
+},
+{
+    "fields": {
+        "question": "\u00bfComo se llamaba la madre de Jes\u00fas?",
+        "value": 1,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 1
+},
+{
+    "fields": {
+        "question": "\u00bfComo se llamaba el esposo de Mar\u00eda?",
+        "value": 1,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 2
+},
+{
+    "fields": {
+        "question": "\u00bfComo se llamaba el \u00e1ngel que anunci\u00f3 a Mar\u00eda que ser\u00eda made de Jes\u00fas?",
+        "value": 2,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 3
+},
+{
+    "fields": {
+        "question": "\u00bfComo se enter\u00f3 Jos\u00e9 de que el beb\u00e9 que iba a tener Mar\u00eda iba a ser el hijo de Dios?",
+        "value": 2,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 4
+},
+{
+    "fields": {
+        "question": "\u00bfDonde viv\u00edan Mar\u00eda y Jos\u00e9?",
+        "value": 4,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 5
+},
+{
+    "fields": {
+        "question": "\u00bfA donde tuvieron que viajar Mar\u00eda y Jos\u00e9 antes que el beb\u00e9 naciera?",
+        "value": 4,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 6
+},
+{
+    "fields": {
+        "question": "\u00bfPor qu\u00e9 tuvieron que viajar a Bel\u00e9n?",
+        "value": 3,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 7
+}
+]

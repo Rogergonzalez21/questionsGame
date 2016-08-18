@@ -1,0 +1,651 @@
+[
+{
+    "fields": {
+        "value": "Chupeta"
+    },
+    "model": "questions.values",
+    "pk": 1
+},
+{
+    "fields": {
+        "value": "Algodon de azucar"
+    },
+    "model": "questions.values",
+    "pk": 2
+},
+{
+    "fields": {
+        "value": "Rueda de la fortuna"
+    },
+    "model": "questions.values",
+    "pk": 3
+},
+{
+    "fields": {
+        "value": "Carrusel"
+    },
+    "model": "questions.values",
+    "pk": 4
+},
+{
+    "fields": {
+        "dificulty": "Facil"
+    },
+    "model": "questions.dificulty",
+    "pk": 1
+},
+{
+    "fields": {
+        "dificulty": "Medio"
+    },
+    "model": "questions.dificulty",
+    "pk": 2
+},
+{
+    "fields": {
+        "dificulty": "Dificil"
+    },
+    "model": "questions.dificulty",
+    "pk": 3
+},
+{
+    "fields": {
+        
+        "question": "\u00bfComo se llamaba la madre de Jes\u00fas?",
+        "value": 1,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 1
+},
+{
+    "fields": {
+        
+        "question": "\u00bfComo se llamaba el esposo de Mar\u00eda?",
+        "value": 1,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 2
+},
+{
+    "fields": {
+        
+        "question": "\u00bfComo se llamaba el \u00e1ngel que anunci\u00f3 a Mar\u00eda que ser\u00eda made de Jes\u00fas?",
+        "value": 2,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 3
+},
+{
+    "fields": {
+        
+        "question": "\u00bfComo se enter\u00f3 Jos\u00e9 de que el beb\u00e9 que iba a tener Mar\u00eda iba a ser el hijo de Dios?",
+        "value": 2,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 4
+},
+{
+    "fields": {
+        
+        "question": "\u00bfDonde viv\u00edan Mar\u00eda y Jos\u00e9?",
+        "value": 4,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 5
+},
+{
+    "fields": {
+        
+        "question": "\u00bfA donde tuvieron que viajar Mar\u00eda y Jos\u00e9 antes que el beb\u00e9 naciera?",
+        "value": 4,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 6
+},
+{
+    "fields": {
+        
+        "question": "\u00bfPor qu\u00e9 tuvieron que viajar a Bel\u00e9n?",
+        "value": 3,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 7
+},
+{
+    "fields": {
+        
+        "question": "\u00bfQuien era el gobernante jud\u00edo cuando Jes\u00fas naci\u00f3?",
+        "value": 3,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 8
+},
+{
+    "fields": {
+        
+        "question": "\u00bfPor qu\u00e9 Jes\u00fas era un hijo tan importante?",
+        "value": 1,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 9
+},
+{
+    "fields": {
+        
+        "question": "\u00bfDonde naci\u00f3 Jes\u00fas?",
+        "value": 1,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 10
+},
+{
+    "fields": {
+        
+        "question": "\u00bfQu\u00e9 hizo Mar\u00eda cuando Jes\u00fas naci\u00f3?",
+        "value": 2,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 11
+},
+{
+    "fields": {
+        
+        "question": "\u00bfA qui\u00e9nes se les apareci\u00f3 un \u00e1ngel?",
+        "value": 3,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 12
+},
+{
+    "fields": {
+        
+        "question": "\u00bfQui\u00e9n era el pariente mas ilustre de Jos\u00e9? ",
+        "value": 2,
+        "dificulty": 2
+    },
+    "model": "questions.question",
+    "pk": 13
+},
+{
+    "fields": {
+        
+        "question": "\u00bfPor qu\u00e9 Mar\u00eda se sorprendi\u00f3 ante el saludo del \u00c1ngel Gabriel?",
+        "value": 1,
+        "dificulty": 2
+    },
+    "model": "questions.question",
+    "pk": 14
+},
+{
+    "fields": {
+        
+        "question": "\u00bfC\u00f3mo pudo quedar Mar\u00eda embarazada?",
+        "value": 2,
+        "dificulty": 2
+    },
+    "model": "questions.question",
+    "pk": 15
+},
+{
+    "fields": {
+        
+        "question": "\u00bfC\u00f3mo respondi\u00f3 Mar\u00eda a todo lo que el \u00c1ngel Gabriel dijo?",
+        "value": 3,
+        "dificulty": 2
+    },
+    "model": "questions.question",
+    "pk": 16
+},
+{
+    "fields": {
+        
+        "question": "\u00bfC\u00f3mo se llama el emperador de Roma cuando Jes\u00fas naci\u00f3",
+        "value": 3,
+        "dificulty": 2
+    },
+    "model": "questions.question",
+    "pk": 17
+},
+{
+    "fields": {
+        
+        "question": "\u00bfDonde fueron Jos\u00e9 y Mar\u00eda al censo?",
+        "value": 1,
+        "dificulty": 2
+    },
+    "model": "questions.question",
+    "pk": 18
+},
+{
+    "fields": {
+        
+        "question": "\u00bfDonde viv\u00edan Jos\u00e9 y Mar\u00eda?",
+        "value": 1,
+        "dificulty": 2
+    },
+    "model": "questions.question",
+    "pk": 19
+},
+{
+    "fields": {
+        
+        "question": "\u00bfA qu\u00e9 fueron los Pastores a Bel\u00e9n?",
+        "value": 1,
+        "dificulty": 2
+    },
+    "model": "questions.question",
+    "pk": 20
+},
+{
+    "fields": {
+        
+        "question": "\u00bfA donde huyeron Jes\u00fas, Mar\u00eda y Jos\u00e9?",
+        "value": 2,
+        "dificulty": 2
+    },
+    "model": "questions.question",
+    "pk": 21
+},
+{
+    "fields": {
+        
+        "question": "\u00bfQu\u00e9 dec\u00edan los \u00e1ngeles ante los pastores?",
+        "value": 3,
+        "dificulty": 3
+    },
+    "model": "questions.question",
+    "pk": 22
+},
+{
+    "fields": {
+        
+        "question": "\u00bfA qu\u00e9 fueron Jes\u00fas, Mar\u00eda y Jos\u00e9 a Jerusal\u00e9n?",
+        "value": 4,
+        "dificulty": 3
+    },
+    "model": "questions.question",
+    "pk": 23
+},
+{
+    "fields": {
+        
+        "question": "\u00bfCuantos sabios visitarion a Jes\u00fas?",
+        "value": 1,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 24
+},
+{
+    "fields": {
+        
+        "question": "\u00bfCuantos regalos le llevaron a Jes\u00fas?",
+        "value": 2,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 25
+},
+{
+    "fields": {
+        
+        "question": "\u00bfCu\u00e1les regalos le llevaron a Jes\u00fas?",
+        "value": 4,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 26
+},
+{
+    "fields": {
+        
+        "question": "\u00bfDe d\u00f3nde vienen los sabios? ",
+        "value": 4,
+        "dificulty": 2
+    },
+    "model": "questions.question",
+    "pk": 27
+},
+{
+    "fields": {
+        
+        "question": "\u00bfC\u00f3mo se llama el pap\u00e1 de Jes\u00fas?",
+        "value": 2,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 28
+},
+{
+    "fields": {
+        
+        "question": "\u00bfPor qu\u00e9 se quedaron en un establo?",
+        "value": 4,
+        "dificulty": 2
+    },
+    "model": "questions.question",
+    "pk": 29
+},
+{
+    "fields": {
+        
+        "question": "\u00bfPor qu\u00e9 huyeron a Egipto?",
+        "value": 4,
+        "dificulty": 3
+    },
+    "model": "questions.question",
+    "pk": 30
+},
+{
+    "fields": {
+        
+        "question": "\u00bfPor qu\u00e9 Herodes quiere matar a Jes\u00fas?",
+        "value": 4,
+        "dificulty": 2
+    },
+    "model": "questions.question",
+    "pk": 31
+},
+{
+    "fields": {
+        
+        "question": "\u00bfPor qu\u00e9 Jes\u00fas se qued\u00f3 en Jerusal\u00e9n?",
+        "value": 4,
+        "dificulty": 3
+    },
+    "model": "questions.question",
+    "pk": 32
+},
+{
+    "fields": {
+        
+        "question": "\u00bfCu\u00e1ntos d\u00edas de camino hay entre Jerusal\u00e9n y Nazareth?",
+        "value": 2,
+        "dificulty": 3
+    },
+    "model": "questions.question",
+    "pk": 33
+},
+{
+    "fields": {
+        
+        "question": "\u00bfCu\u00e1ntos dias caminaron Mar\u00eda y Jos\u00e9 antes de encontrar a Jes\u00fas?",
+        "value": 2,
+        "dificulty": 3
+    },
+    "model": "questions.question",
+    "pk": 34
+},
+{
+    "fields": {
+        
+        "question": "\u00bfCu\u00e1ndo encontraron a Jes\u00fas?",
+        "value": 2,
+        "dificulty": 3
+    },
+    "model": "questions.question",
+    "pk": 35
+},
+{
+    "fields": {
+        
+        "question": "\u00bfQu\u00e9 respondi\u00f3 Jes\u00fas cuando lo encontraron?",
+        "value": 3,
+        "dificulty": 3
+    },
+    "model": "questions.question",
+    "pk": 36
+},
+{
+    "fields": {
+        
+        "question": "\u00bfQu\u00e9 hac\u00eda Jes\u00fas en el templo?",
+        "value": 4,
+        "dificulty": 2
+    },
+    "model": "questions.question",
+    "pk": 37
+},
+{
+    "fields": {
+        
+        "question": "\u00bfC\u00f3mo crec\u00eda Jes\u00fas?",
+        "value": 3,
+        "dificulty": 2
+    },
+    "model": "questions.question",
+    "pk": 38
+},
+{
+    "fields": {
+        
+        "question": "\u00bfC\u00f3mo salud\u00f3 el \u00e1ngel Gabriel a Mar\u00eda?",
+        "value": 3,
+        "dificulty": 2
+    },
+    "model": "questions.question",
+    "pk": 39
+},
+{
+    "fields": {
+        
+        "question": "\u00bfQu\u00e9 es un pesebre?",
+        "value": 4,
+        "dificulty": 2
+    },
+    "model": "questions.question",
+    "pk": 40
+},
+{
+    "fields": {
+        
+        "question": "\u00bfC\u00f3mo se llama el hijo de Dios?",
+        "value": 4,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 41
+},
+{
+    "fields": {
+        
+        "question": "\u00bfCu\u00e1ndo se celebra el nacimiento de Jes\u00fas?",
+        "value": 3,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 42
+},
+{
+    "fields": {
+        
+        "question": "\u00bfQu\u00e9 profesi\u00f3n ten\u00eda Jos\u00e9?",
+        "value": 3,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 43
+},
+{
+    "fields": {
+        
+        "question": "\u00bfQuienes visitaron a Jes\u00fas?",
+        "value": 4,
+        "dificulty": 1
+    },
+    "model": "questions.question",
+    "pk": 44
+},
+{
+    "fields": {
+        
+        "question": "\u00bfPor qu\u00e9 Herodes no conoci\u00f3 a Jes\u00fas?",
+        "value": 2,
+        "dificulty": 3
+    },
+    "model": "questions.question",
+    "pk": 45
+},
+{
+    "fields": {
+        
+        "question": "\u00bfHerodes mat\u00f3 a Jes\u00fas?",
+        "value": 1,
+        "dificulty": 2
+    },
+    "model": "questions.question",
+    "pk": 46
+},
+{
+    "fields": {
+        
+        "question": "\u00bfPor qu\u00e9 huyeron a Egipto?",
+        "value": 2,
+        "dificulty": 2
+    },
+    "model": "questions.question",
+    "pk": 47
+},
+{
+    "fields": {
+        
+        "question": "\u00bfQu\u00e9n pidi\u00f3 a Jos\u00e9 que huyera? ",
+        "value": 2,
+        "dificulty": 3
+    },
+    "model": "questions.question",
+    "pk": 48
+},
+{
+    "fields": {
+        
+        "question": "\u00bfPor qu\u00e9 Jes\u00fas naci\u00f3?",
+        "value": 4,
+        "dificulty": 3
+    },
+    "model": "questions.question",
+    "pk": 49
+},
+{
+    "fields": {
+        
+        "question": "\u00bfQu\u00e9 cosa anunciaba el nacimiento de Jes\u00fas?",
+        "value": 1,
+        "dificulty": 3
+    },
+    "model": "questions.question",
+    "pk": 50
+},
+{
+    "fields": {
+        
+        "question": "\u00bfC\u00f3mo se llama el \u00e1ngel que habla con Jos\u00e9, Mar\u00eda y los pastores?",
+        "value": 2,
+        "dificulty": 2
+    },
+    "model": "questions.question",
+    "pk": 51
+},
+{
+    "fields": {
+        
+        "question": "\u00bfQu\u00e9 es la pascua?",
+        "value": 1,
+        "dificulty": 3
+    },
+    "model": "questions.question",
+    "pk": 52
+},
+{
+    "fields": {
+        
+        "question": "\u00bfQu\u00e9 es un censo?",
+        "value": 3,
+        "dificulty": 3
+    },
+    "model": "questions.question",
+    "pk": 53
+},
+{
+    "fields": {
+        
+        "question": "\u00bfD\u00f3nde queda el templo?",
+        "value": 3,
+        "dificulty": 2
+    },
+    "model": "questions.question",
+    "pk": 54
+},
+{
+    "fields": {
+        
+        "question": "\u00bfQu\u00e9 hicieron los \u00e1ngeles?",
+        "value": 1,
+        "dificulty": 3
+    },
+    "model": "questions.question",
+    "pk": 55
+},
+{
+    "fields": {
+        
+        "question": "\u00bfPor qu\u00e9 tuvieron que viajar a Bel\u00e9n?",
+        "value": 3,
+        "dificulty": 3
+    },
+    "model": "questions.question",
+    "pk": 56
+},
+{
+    "fields": {
+        
+        "question": "\u00bfD\u00f3nde pasaron Mar\u00eda y Jos\u00e9 la noche en Bel\u00e9n? \u00bfPor qu\u00e9?",
+        "value": 3,
+        "dificulty": 3
+    },
+    "model": "questions.question",
+    "pk": 57
+},
+{
+    "fields": {
+        
+        "question": "\u00bfQu\u00e9 les dijo el \u00e1ngel a los pastores?",
+        "value": 4,
+        "dificulty": 3
+    },
+    "model": "questions.question",
+    "pk": 58
+},
+{
+    "fields": {
+        
+        "question": "\u00bfC\u00f3mo llegaron los hombres sabios a Bel\u00e9n?",
+        "value": 1,
+        "dificulty": 3
+    },
+    "model": "questions.question",
+    "pk": 59
+},
+{
+    "fields": {
+        
+        "question": "\u00bfQu\u00e9 hicieron los pastores despu\u00e9s de que los \u00e1ngeles se fueron?",
+        "value": 1,
+        "dificulty": 3
+    },
+    "model": "questions.question",
+    "pk": 60
+}
+]
